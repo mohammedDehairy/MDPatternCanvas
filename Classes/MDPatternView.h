@@ -13,5 +13,7 @@
     @protected
     CAShapeLayer *maskLayer;
 }
+
+//override this method in subclasses to define the shape of the pattern view as CGPathRef
 -(CGPathRef)maskPath;
 @end
