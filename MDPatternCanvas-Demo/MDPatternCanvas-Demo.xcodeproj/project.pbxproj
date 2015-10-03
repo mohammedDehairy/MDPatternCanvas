@@ -21,6 +21,8 @@
 		3DD55D6D1BBFF6D00090900E /* MDPatternLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D6C1BBFF6D00090900E /* MDPatternLayoutItem.m */; settings = {ASSET_TAGS = (); }; };
 		3DD55D701BC000900090900E /* MDPatternViewTriangleUpRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D6F1BC000900090900E /* MDPatternViewTriangleUpRight.m */; settings = {ASSET_TAGS = (); }; };
 		3DD55D731BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D721BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m */; settings = {ASSET_TAGS = (); }; };
+		3DD55D761BC01B540090900E /* MDPatternCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D751BC01B540090900E /* MDPatternCanvas.m */; settings = {ASSET_TAGS = (); }; };
+		3DD55D791BC01D530090900E /* MDTrianglePatternLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D781BC01D530090900E /* MDTrianglePatternLayout.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		3DD55D6F1BC000900090900E /* MDPatternViewTriangleUpRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternViewTriangleUpRight.m; sourceTree = "<group>"; };
 		3DD55D711BC00EB20090900E /* MDPatternViewUpSideDownTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternViewUpSideDownTriangle.h; sourceTree = "<group>"; };
 		3DD55D721BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternViewUpSideDownTriangle.m; sourceTree = "<group>"; };
+		3DD55D741BC01B540090900E /* MDPatternCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternCanvas.h; sourceTree = "<group>"; };
+		3DD55D751BC01B540090900E /* MDPatternCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternCanvas.m; sourceTree = "<group>"; };
+		3DD55D771BC01D530090900E /* MDTrianglePatternLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTrianglePatternLayout.h; sourceTree = "<group>"; };
+		3DD55D781BC01D530090900E /* MDTrianglePatternLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTrianglePatternLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,10 @@
 				3DD55D6F1BC000900090900E /* MDPatternViewTriangleUpRight.m */,
 				3DD55D711BC00EB20090900E /* MDPatternViewUpSideDownTriangle.h */,
 				3DD55D721BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m */,
+				3DD55D741BC01B540090900E /* MDPatternCanvas.h */,
+				3DD55D751BC01B540090900E /* MDPatternCanvas.m */,
+				3DD55D771BC01D530090900E /* MDTrianglePatternLayout.h */,
+				3DD55D781BC01D530090900E /* MDTrianglePatternLayout.m */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -308,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD55D3B1BBFF5D70090900E /* MDPatternCanvas_Demo.xcdatamodeld in Sources */,
+				3DD55D761BC01B540090900E /* MDPatternCanvas.m in Sources */,
 				3DD55D351BBFF5D70090900E /* ViewController.m in Sources */,
+				3DD55D791BC01D530090900E /* MDTrianglePatternLayout.m in Sources */,
 				3DD55D321BBFF5D70090900E /* AppDelegate.m in Sources */,
 				3DD55D6A1BBFF6B40090900E /* MDPatternLayout.m in Sources */,
 				3DD55D731BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m in Sources */,

@@ -33,7 +33,7 @@
         CAShapeLayer *borderLayer = [CAShapeLayer layer];
         [borderLayer setPath:path];
         CFRelease(path);
-        [borderLayer setLineWidth:5.0f];
+        [borderLayer setLineWidth:2.0f];
         [borderLayer setStrokeColor:[UIColor blackColor].CGColor];
         [borderLayer setFillColor:[UIColor clearColor].CGColor];
         borderLayer.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);;

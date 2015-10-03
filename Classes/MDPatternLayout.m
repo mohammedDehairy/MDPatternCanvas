@@ -10,10 +10,20 @@
 #import "MDPatternView.h"
 
 @interface MDPatternLayout ()
-@property(nonatomic,retain)NSMutableDictionary *patternTypesDictionary;
+
 @end
 
 @implementation MDPatternLayout
+
+-(instancetype)init
+{
+    if(self = [super init])
+    {
+        _patternTypesDictionary = [NSMutableDictionary dictionary];
+    }
+    return self;
+}
+
 -(void)registerClass:(Class)viewClass forPatternItemType:(NSString *)patternType
 {
     if(![viewClass isSubclassOfClass:[MDPatternView class]])
@@ -25,7 +35,8 @@
 }
 -(Class)viewClassForPatternItemType:(NSString *)patternItemType
 {
-    return [_patternTypesDictionary valueForKey:patternItemType];
+    Class viewClass = [_patternTypesDictionary valueForKey:patternItemType];
+    return viewClass;
 }
 
 -(NSArray<MDPatternLayoutItem*>*)layoutItems

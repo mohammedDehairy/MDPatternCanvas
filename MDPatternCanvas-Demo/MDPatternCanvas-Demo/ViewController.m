@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "MDPatternViewUpSideDownTriangle.h"
+#import "MDPatternCanvas.h"
+#import "MDTrianglePatternLayout.h"
 
 @interface ViewController ()
 
@@ -19,8 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    MDPatternViewUpSideDownTriangle *triangle = [[MDPatternViewUpSideDownTriangle alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width-20, self.view.frame.size.height-20)];
-    [self.view addSubview:triangle];
+    MDPatternCanvas *trianglePattern = [[MDPatternCanvas alloc] initWithFrame:CGRectMake(10, 30, self.view.frame.size.width-20, self.view.frame.size.width-20) patternLayout:[[MDTrianglePatternLayout alloc] init]];
+    [self.view addSubview:trianglePattern];
 }
 
 - (void)didReceiveMemoryWarning {

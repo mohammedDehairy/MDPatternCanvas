@@ -10,8 +10,14 @@
 #import "MDPatternLayoutItem.h"
 
 @interface MDPatternLayout : NSObject
+{
+    @protected
+    NSMutableDictionary *_patternTypesDictionary;
+}
 -(void)registerClass:(Class)viewClass forPatternItemType:(NSString*)patternItemType;
 -(Class)viewClassForPatternItemType:(NSString*)patternItemType;
 
 -(NSArray<MDPatternLayoutItem*>*)layoutItems;
+
+@property(nonatomic,assign)CGSize patternSize;
 @end
