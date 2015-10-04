@@ -46,7 +46,7 @@
             CGRect frame = CGRectMake(j * itemSize.width + xOffset, i * itemSize.height, itemSize.width, itemSize.height);
             
             //initialise item layout
-            MDPatternLayoutItem *item = [[MDPatternLayoutItem alloc] initWithItemType:@"triangleUpSideDown" frame:frame];
+            MDPatternLayoutItem *item = [[MDPatternLayoutItem alloc] initWithTileType:@"triangleUpSideDown" frame:frame];
             
             //add item layout to array
             [layoutItems addObject:item];
@@ -74,7 +74,7 @@
             CGRect frame = CGRectMake(j * itemSize.width + xOffset, i * itemSize.height, itemSize.width, itemSize.height);
             
             //initialise item layout
-            MDPatternLayoutItem *item = [[MDPatternLayoutItem alloc] initWithItemType:@"triangleUpRight" frame:frame];
+            MDPatternLayoutItem *item = [[MDPatternLayoutItem alloc] initWithTileType:@"triangleUpRight" frame:frame];
             
             //add item layout to array
             [layoutItems addObject:item];

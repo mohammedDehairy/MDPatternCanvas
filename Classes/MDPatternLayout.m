@@ -28,14 +28,20 @@
 {
     if(![viewClass isSubclassOfClass:[MDPatternTileView class]])
     {
-        [NSException raise:@"Invalid view class" format:@"View class should be a subclass of MDPatternView"];
+        [NSException raise:@"Invalid view class" format:@"View class should be a subclass of MDPatternTileView"];
     }
     
     [_patternTypesDictionary setValue:viewClass forKey:patternType];
 }
--(Class)viewClassForPatternItemType:(NSString *)patternItemType
+-(Class)viewClassForPatternTileType:(NSString *)patternTileType
 {
-    Class viewClass = [_patternTypesDictionary valueForKey:patternItemType];
+    Class viewClass = [_patternTypesDictionary valueForKey:patternTileType];
+    
+    if(!viewClass)
+    {
+        [NSException raise:@"Invalid pattern tile type" format:@"you should register a MDPatternTileView subclass for the supplied tile type"];
+    }
+    
     return viewClass;
 }
 

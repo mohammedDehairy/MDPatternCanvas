@@ -69,11 +69,11 @@
     
     for(MDPatternLayoutItem *layoutItem in layoutItems)
     {
-        //get item type
-        NSString *itemType = layoutItem.patternItemType;
+        //get tile type
+        NSString *tileType = layoutItem.patternTileType;
         
         //get item class
-        Class viewClass    = [_patternLayout viewClassForPatternItemType:itemType];
+        Class viewClass    = [_patternLayout viewClassForPatternTileType:tileType];
         
         MDPatternTileView *view = (MDPatternTileView*)[scrollContainerView viewWithTag:tagCounter];
         

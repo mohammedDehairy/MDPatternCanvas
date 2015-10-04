@@ -18,7 +18,7 @@
 -(void)registerClass:(Class)viewClass forPatternItemType:(NSString*)patternItemType;
 
 //get the MDPatternView subclass for a string identifier
--(Class)viewClassForPatternItemType:(NSString*)patternItemType;
+-(Class)viewClassForPatternTileType:(NSString*)patternTileType;
 
 //override this method in subclasses to return an array of MDPatternLayoutItem's that determines the types/layout of pattern shapes
 -(NSArray<MDPatternLayoutItem*>*)layoutItems;

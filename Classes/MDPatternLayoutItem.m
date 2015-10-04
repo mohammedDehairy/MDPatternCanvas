@@ -13,11 +13,11 @@
 @end
 
 @implementation MDPatternLayoutItem
--(instancetype)initWithItemType:(NSString*)type frame:(CGRect)frame
+-(instancetype)initWithTileType:(NSString*)type frame:(CGRect)frame
 {
     if(self = [super init])
     {
-        _patternItemType  = type;
+        _patternTileType  = type;
         _frame            = frame;
     }
     return self;

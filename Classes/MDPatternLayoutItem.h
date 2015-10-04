@@ -11,8 +11,8 @@
 
 @interface MDPatternLayoutItem : NSObject
 
--(instancetype)initWithItemType:(NSString*)type frame:(CGRect)frame;
+-(instancetype)initWithTileType:(NSString*)type frame:(CGRect)frame;
 
-@property(nonatomic,readonly)NSString *patternItemType;
+@property(nonatomic,readonly)NSString *patternTileType;
 @property(nonatomic,readonly)CGRect   frame;
 @end
