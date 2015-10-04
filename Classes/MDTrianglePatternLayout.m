@@ -22,7 +22,7 @@
 }
 -(NSArray<MDPatternLayoutItem*>*)layoutItems
 {
-    CGSize itemSize = CGSizeMake(self.patternSize.width/10, self.patternSize.width/10);
+    CGSize itemSize = self.tileSize;
     
     NSMutableArray *layoutItems = [NSMutableArray array];
     

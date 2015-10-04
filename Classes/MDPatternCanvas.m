@@ -22,7 +22,7 @@
     if(self = [super initWithFrame:frame])
     {
         _patternLayout = patternLayout;
-        _patternLayout.patternSize = frame.size;
+        
         
         self.clipsToBounds = YES;
     }
@@ -34,12 +34,13 @@
     [super layoutSubviews];
     
     
+    
     if(!scrollView)
     {
         //scroll view to enable zooming
         scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
         scrollView.delegate = self;
-        [scrollView setMaximumZoomScale:2.0];
+        [scrollView setMaximumZoomScale:3.0];
         [scrollView setMinimumZoomScale:1.0];
         [self addSubview:scrollView];
     }else
@@ -56,11 +57,10 @@
         scrollContainerView.layer.borderWidth = _borderWidth/2;
         scrollContainerView.clipsToBounds     = YES;
         [scrollView addSubview:scrollContainerView];
-    }else
-    {
-        scrollContainerView.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+        scrollContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     }
     
+    _patternLayout.tileSize = CGSizeMake(scrollContainerView.bounds.size.width/10, scrollContainerView.bounds.size.height/10);
     
     
     NSArray<MDPatternLayoutItem*> *layoutItems = [_patternLayout layoutItems];
