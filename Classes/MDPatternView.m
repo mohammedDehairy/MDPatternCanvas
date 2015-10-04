@@ -30,7 +30,7 @@
         
         
         //border layer with the same path
-        CAShapeLayer *borderLayer = [CAShapeLayer layer];
+        borderLayer = [CAShapeLayer layer];
         [borderLayer setPath:path];
         CFRelease(path);
         [borderLayer setLineWidth:2.0f];
@@ -51,6 +51,40 @@
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
     return CGPathContainsPoint(maskLayer.path, NULL, point, false);
+}
+
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    //ignore more than one touch at the same time
+    if(touches.count > 1)
+    {
+        return;
+    }
+    
+    //make sure when the touch ends that its location is within the mask layer bounds , if not ignore it
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:self];
+    if(!CGPathContainsPoint(maskLayer.path, NULL, location, false))
+    {
+        return;
+    }
+    
+    if([_delegate respondsToSelector:@selector(patternViewDidTap:)])
+    {
+        [_delegate patternViewDidTap:self];
+    }
+}
+
+-(void)setBorderColor:(UIColor *)borderColor
+{
+    _borderColor = borderColor;
+    [borderLayer setStrokeColor:borderColor.CGColor];
+}
+
+-(void)setBorderWidth:(CGFloat)borderWidth
+{
+    _borderWidth = borderWidth;
+    [borderLayer setLineWidth:borderWidth];
 }
 
 -(CGPathRef)maskPath
