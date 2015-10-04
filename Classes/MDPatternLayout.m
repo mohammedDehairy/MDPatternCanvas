@@ -7,7 +7,7 @@
 //
 
 #import "MDPatternLayout.h"
-#import "MDPatternView.h"
+#import "MDPatternTileView.h"
 
 @interface MDPatternLayout ()
 
@@ -26,7 +26,7 @@
 
 -(void)registerClass:(Class)viewClass forPatternItemType:(NSString *)patternType
 {
-    if(![viewClass isSubclassOfClass:[MDPatternView class]])
+    if(![viewClass isSubclassOfClass:[MDPatternTileView class]])
     {
         [NSException raise:@"Invalid view class" format:@"View class should be a subclass of MDPatternView"];
     }

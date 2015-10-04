@@ -6,15 +6,15 @@
 //  Copyright © 2015 mohamed mohamed El Dehairy. All rights reserved.
 //
 
-#import "MDPatternViewTriangleUpRight.h"
+#import "MDTriangleUpRightPatternTileView.h"
 
-@interface MDPatternViewTriangleUpRight ()
+@interface MDTriangleUpRightPatternTileView ()
 {
     
 }
 @end
 
-@implementation MDPatternViewTriangleUpRight
+@implementation MDTriangleUpRightPatternTileView
 
 
 -(CGPathRef)maskPath

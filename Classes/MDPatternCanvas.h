@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "MDPatternLayout.h"
-#import "MDPatternView.h"
+#import "MDPatternTileView.h"
 
 @class MDPatternCanvas;
 
 @protocol MDPatternCanvasDelegate <NSObject>
 
 //notify delegate that a pattern view was tapped
--(void)patternCanvas:(MDPatternCanvas*)patternCanvas didTapPatternView:(MDPatternView*)patternView;
+-(void)patternCanvas:(MDPatternCanvas*)patternCanvas didTapPatternView:(MDPatternTileView*)patternTile;
 
 @end
 

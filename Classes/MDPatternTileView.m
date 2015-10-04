@@ -1,18 +1,18 @@
 //
-//  MDPatternView.m
+//  MDPatternTile.m
 //  MDPatternCanvas-Demo
 //
-//  Created by mohamed mohamed El Dehairy on 10/3/15.
+//  Created by mohamed mohamed El Dehairy on 10/4/15.
 //  Copyright © 2015 mohamed mohamed El Dehairy. All rights reserved.
 //
 
-#import "MDPatternView.h"
+#import "MDPatternTileView.h"
 
-@interface MDPatternView ()
+@interface MDPatternTileView ()
 
 @end
 
-@implementation MDPatternView
+@implementation MDPatternTileView
 
 -(instancetype)initWithFrame:(CGRect)frame
 {
@@ -93,11 +93,12 @@
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
+
 
 @end

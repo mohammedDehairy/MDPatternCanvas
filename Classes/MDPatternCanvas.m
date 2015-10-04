@@ -8,7 +8,7 @@
 
 #import "MDPatternCanvas.h"
 
-@interface MDPatternCanvas ()<UIScrollViewDelegate,MDPatternViewDelegate>
+@interface MDPatternCanvas ()<UIScrollViewDelegate,MDPatternTileViewDelegate>
 {
     UIScrollView *scrollView;
     UIView *scrollContainerView;
@@ -75,7 +75,7 @@
         //get item class
         Class viewClass    = [_patternLayout viewClassForPatternItemType:itemType];
         
-        MDPatternView *view = (MDPatternView*)[scrollContainerView viewWithTag:tagCounter];
+        MDPatternTileView *view = (MDPatternTileView*)[scrollContainerView viewWithTag:tagCounter];
         
         if(!view)
         {
@@ -120,7 +120,7 @@
 
 #pragma mark - MDPatternViewDelegate
 
--(void)patternViewDidTap:(MDPatternView *)patternView
+-(void)patternViewDidTap:(MDPatternTileView *)patternView
 {
     if([_delegate respondsToSelector:@selector(patternCanvas:didTapPatternView:)])
     {

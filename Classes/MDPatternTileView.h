@@ -1,23 +1,23 @@
 //
-//  MDPatternView.h
+//  MDPatternTile.h
 //  MDPatternCanvas-Demo
 //
-//  Created by mohamed mohamed El Dehairy on 10/3/15.
+//  Created by mohamed mohamed El Dehairy on 10/4/15.
 //  Copyright © 2015 mohamed mohamed El Dehairy. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class MDPatternView;
+@class MDPatternTileView;
 
-@protocol MDPatternViewDelegate <NSObject>
+@protocol MDPatternTileViewDelegate <NSObject>
 
 //notify delegate that it was tapped
--(void)patternViewDidTap:(MDPatternView*)patternView;
+-(void)patternViewDidTap:(MDPatternTileView*)patternTile;
 
 @end
 
-@interface MDPatternView : UIView
+@interface MDPatternTileView : UIView
 {
     @protected
     CAShapeLayer *maskLayer;
@@ -25,7 +25,7 @@
 }
 
 //delegate
-@property(nonatomic,weak)id<MDPatternViewDelegate> delegate;
+@property(nonatomic,weak)id<MDPatternTileViewDelegate> delegate;
 
 //border width
 @property(nonatomic,assign)CGFloat                 borderWidth;

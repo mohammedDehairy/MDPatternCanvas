@@ -6,9 +6,9 @@
 //  Copyright © 2015 mohamed mohamed El Dehairy. All rights reserved.
 //
 
-#import "MDPatternViewUpSideDownTriangle.h"
+#import "MDUpSideDownTrianglePatternTileView.h"
 
-@implementation MDPatternViewUpSideDownTriangle
+@implementation MDUpSideDownTrianglePatternTileView
 
 -(CGPathRef)maskPath
 {

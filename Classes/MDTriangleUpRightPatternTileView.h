@@ -6,8 +6,8 @@
 //  Copyright © 2015 mohamed mohamed El Dehairy. All rights reserved.
 //
 
-#import "MDPatternView.h"
+#import "MDPatternTileView.h"
 
-@interface MDPatternViewTriangleUpRight : MDPatternView
+@interface MDTriangleUpRightPatternTileView : MDPatternTileView
 
 @end

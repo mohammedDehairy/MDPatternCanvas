@@ -32,9 +32,9 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)patternCanvas:(MDPatternCanvas *)patternCanvas didTapPatternView:(MDPatternView *)patternView
+-(void)patternCanvas:(MDPatternCanvas *)patternCanvas didTapPatternView:(MDPatternTileView *)patternTile
 {
-    patternView.backgroundColor = [UIColor redColor];
+    patternTile.backgroundColor = [UIColor redColor];
 }
 
 @end

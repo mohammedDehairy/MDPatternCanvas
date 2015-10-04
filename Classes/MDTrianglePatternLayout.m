@@ -7,16 +7,16 @@
 //
 
 #import "MDTrianglePatternLayout.h"
-#import "MDPatternViewTriangleUpRight.h"
-#import "MDPatternViewUpSideDownTriangle.h"
+#import "MDTriangleUpRightPatternTileView.h"
+#import "MDUpSideDownTrianglePatternTileView.h"
 
 @implementation MDTrianglePatternLayout
 -(instancetype)init
 {
     if(self = [super init])
     {
-        [self registerClass:[MDPatternViewTriangleUpRight class] forPatternItemType:@"triangleUpRight"];
-        [self registerClass:[MDPatternViewUpSideDownTriangle class] forPatternItemType:@"triangleUpSideDown"];
+        [self registerClass:[MDTriangleUpRightPatternTileView class] forPatternItemType:@"triangleUpRight"];
+        [self registerClass:[MDUpSideDownTrianglePatternTileView class] forPatternItemType:@"triangleUpSideDown"];
     }
     return self;
 }

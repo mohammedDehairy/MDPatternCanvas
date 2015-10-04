@@ -16,13 +16,13 @@
 		3DD55D401BBFF5D70090900E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD55D3E1BBFF5D70090900E /* LaunchScreen.storyboard */; };
 		3DD55D4B1BBFF5D70090900E /* MDPatternCanvas_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D4A1BBFF5D70090900E /* MDPatternCanvas_DemoTests.m */; };
 		3DD55D561BBFF5D70090900E /* MDPatternCanvas_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D551BBFF5D70090900E /* MDPatternCanvas_DemoUITests.m */; };
-		3DD55D671BBFF67E0090900E /* MDPatternView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D661BBFF67E0090900E /* MDPatternView.m */; settings = {ASSET_TAGS = (); }; };
 		3DD55D6A1BBFF6B40090900E /* MDPatternLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D691BBFF6B40090900E /* MDPatternLayout.m */; settings = {ASSET_TAGS = (); }; };
 		3DD55D6D1BBFF6D00090900E /* MDPatternLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D6C1BBFF6D00090900E /* MDPatternLayoutItem.m */; settings = {ASSET_TAGS = (); }; };
-		3DD55D701BC000900090900E /* MDPatternViewTriangleUpRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D6F1BC000900090900E /* MDPatternViewTriangleUpRight.m */; settings = {ASSET_TAGS = (); }; };
-		3DD55D731BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D721BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m */; settings = {ASSET_TAGS = (); }; };
+		3DD55D701BC000900090900E /* MDTriangleUpRightPatternTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D6F1BC000900090900E /* MDTriangleUpRightPatternTileView.m */; settings = {ASSET_TAGS = (); }; };
+		3DD55D731BC00EB20090900E /* MDUpSideDownTrianglePatternTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D721BC00EB20090900E /* MDUpSideDownTrianglePatternTileView.m */; settings = {ASSET_TAGS = (); }; };
 		3DD55D761BC01B540090900E /* MDPatternCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D751BC01B540090900E /* MDPatternCanvas.m */; settings = {ASSET_TAGS = (); }; };
 		3DD55D791BC01D530090900E /* MDTrianglePatternLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD55D781BC01D530090900E /* MDTrianglePatternLayout.m */; settings = {ASSET_TAGS = (); }; };
+		3DDC8B4A1BC1361700D09D3B /* MDPatternTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC8B491BC1361700D09D3B /* MDPatternTileView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,20 +60,20 @@
 		3DD55D511BBFF5D70090900E /* MDPatternCanvas-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MDPatternCanvas-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD55D551BBFF5D70090900E /* MDPatternCanvas_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPatternCanvas_DemoUITests.m; sourceTree = "<group>"; };
 		3DD55D571BBFF5D70090900E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DD55D651BBFF67E0090900E /* MDPatternView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternView.h; sourceTree = "<group>"; };
-		3DD55D661BBFF67E0090900E /* MDPatternView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternView.m; sourceTree = "<group>"; };
 		3DD55D681BBFF6B40090900E /* MDPatternLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternLayout.h; sourceTree = "<group>"; };
 		3DD55D691BBFF6B40090900E /* MDPatternLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternLayout.m; sourceTree = "<group>"; };
 		3DD55D6B1BBFF6D00090900E /* MDPatternLayoutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternLayoutItem.h; sourceTree = "<group>"; };
 		3DD55D6C1BBFF6D00090900E /* MDPatternLayoutItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternLayoutItem.m; sourceTree = "<group>"; };
-		3DD55D6E1BC000900090900E /* MDPatternViewTriangleUpRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternViewTriangleUpRight.h; sourceTree = "<group>"; };
-		3DD55D6F1BC000900090900E /* MDPatternViewTriangleUpRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternViewTriangleUpRight.m; sourceTree = "<group>"; };
-		3DD55D711BC00EB20090900E /* MDPatternViewUpSideDownTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternViewUpSideDownTriangle.h; sourceTree = "<group>"; };
-		3DD55D721BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternViewUpSideDownTriangle.m; sourceTree = "<group>"; };
+		3DD55D6E1BC000900090900E /* MDTriangleUpRightPatternTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTriangleUpRightPatternTileView.h; sourceTree = "<group>"; };
+		3DD55D6F1BC000900090900E /* MDTriangleUpRightPatternTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTriangleUpRightPatternTileView.m; sourceTree = "<group>"; };
+		3DD55D711BC00EB20090900E /* MDUpSideDownTrianglePatternTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDUpSideDownTrianglePatternTileView.h; sourceTree = "<group>"; };
+		3DD55D721BC00EB20090900E /* MDUpSideDownTrianglePatternTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDUpSideDownTrianglePatternTileView.m; sourceTree = "<group>"; };
 		3DD55D741BC01B540090900E /* MDPatternCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternCanvas.h; sourceTree = "<group>"; };
 		3DD55D751BC01B540090900E /* MDPatternCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternCanvas.m; sourceTree = "<group>"; };
 		3DD55D771BC01D530090900E /* MDTrianglePatternLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTrianglePatternLayout.h; sourceTree = "<group>"; };
 		3DD55D781BC01D530090900E /* MDTrianglePatternLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTrianglePatternLayout.m; sourceTree = "<group>"; };
+		3DDC8B481BC1361700D09D3B /* MDPatternTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDPatternTileView.h; sourceTree = "<group>"; };
+		3DDC8B491BC1361700D09D3B /* MDPatternTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDPatternTileView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,16 +168,16 @@
 		3DD55D641BBFF6210090900E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3DD55D651BBFF67E0090900E /* MDPatternView.h */,
-				3DD55D661BBFF67E0090900E /* MDPatternView.m */,
+				3DDC8B481BC1361700D09D3B /* MDPatternTileView.h */,
+				3DDC8B491BC1361700D09D3B /* MDPatternTileView.m */,
 				3DD55D681BBFF6B40090900E /* MDPatternLayout.h */,
 				3DD55D691BBFF6B40090900E /* MDPatternLayout.m */,
 				3DD55D6B1BBFF6D00090900E /* MDPatternLayoutItem.h */,
 				3DD55D6C1BBFF6D00090900E /* MDPatternLayoutItem.m */,
-				3DD55D6E1BC000900090900E /* MDPatternViewTriangleUpRight.h */,
-				3DD55D6F1BC000900090900E /* MDPatternViewTriangleUpRight.m */,
-				3DD55D711BC00EB20090900E /* MDPatternViewUpSideDownTriangle.h */,
-				3DD55D721BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m */,
+				3DD55D6E1BC000900090900E /* MDTriangleUpRightPatternTileView.h */,
+				3DD55D6F1BC000900090900E /* MDTriangleUpRightPatternTileView.m */,
+				3DD55D711BC00EB20090900E /* MDUpSideDownTrianglePatternTileView.h */,
+				3DD55D721BC00EB20090900E /* MDUpSideDownTrianglePatternTileView.m */,
 				3DD55D741BC01B540090900E /* MDPatternCanvas.h */,
 				3DD55D751BC01B540090900E /* MDPatternCanvas.m */,
 				3DD55D771BC01D530090900E /* MDTrianglePatternLayout.h */,
@@ -323,11 +323,11 @@
 				3DD55D791BC01D530090900E /* MDTrianglePatternLayout.m in Sources */,
 				3DD55D321BBFF5D70090900E /* AppDelegate.m in Sources */,
 				3DD55D6A1BBFF6B40090900E /* MDPatternLayout.m in Sources */,
-				3DD55D731BC00EB20090900E /* MDPatternViewUpSideDownTriangle.m in Sources */,
-				3DD55D701BC000900090900E /* MDPatternViewTriangleUpRight.m in Sources */,
-				3DD55D671BBFF67E0090900E /* MDPatternView.m in Sources */,
+				3DD55D731BC00EB20090900E /* MDUpSideDownTrianglePatternTileView.m in Sources */,
+				3DD55D701BC000900090900E /* MDTriangleUpRightPatternTileView.m in Sources */,
 				3DD55D2F1BBFF5D70090900E /* main.m in Sources */,
 				3DD55D6D1BBFF6D00090900E /* MDPatternLayoutItem.m in Sources */,
+				3DDC8B4A1BC1361700D09D3B /* MDPatternTileView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +555,7 @@
 				3DD55D5C1BBFF5D70090900E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DD55D5D1BBFF5D70090900E /* Build configuration list for PBXNativeTarget "MDPatternCanvas-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +564,7 @@
 				3DD55D5F1BBFF5D70090900E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DD55D601BBFF5D70090900E /* Build configuration list for PBXNativeTarget "MDPatternCanvas-DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +573,7 @@
 				3DD55D621BBFF5D70090900E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
