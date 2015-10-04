@@ -42,14 +42,17 @@
         
         for(int j = 0; j < limit; j++)
         {
-            //get item frame
-            CGRect frame = CGRectMake(j * itemSize.width + xOffset, i * itemSize.height, itemSize.width, itemSize.height);
-            
-            //initialise item layout
-            MDPatternLayoutItem *item = [[MDPatternLayoutItem alloc] initWithTileType:@"triangleUpSideDown" frame:frame];
-            
-            //add item layout to array
-            [layoutItems addObject:item];
+            @autoreleasepool {
+                
+                //get item frame
+                CGRect frame = CGRectMake(j * itemSize.width + xOffset, i * itemSize.height, itemSize.width, itemSize.height);
+                
+                //initialise item layout
+                MDPatternLayoutItem *item = [[MDPatternLayoutItem alloc] initWithTileType:@"triangleUpSideDown" frame:frame];
+                
+                //add item layout to array
+                [layoutItems addObject:item];
+            }
         }
     }
     
@@ -70,14 +73,17 @@
         
         for(int j = 0; j < limit; j++)
         {
-            //get item frame
-            CGRect frame = CGRectMake(j * itemSize.width + xOffset, i * itemSize.height, itemSize.width, itemSize.height);
-            
-            //initialise item layout
-            MDPatternLayoutItem *item = [[MDPatternLayoutItem alloc] initWithTileType:@"triangleUpRight" frame:frame];
-            
-            //add item layout to array
-            [layoutItems addObject:item];
+            @autoreleasepool {
+                
+                //get item frame
+                CGRect frame = CGRectMake(j * itemSize.width + xOffset, i * itemSize.height, itemSize.width, itemSize.height);
+                
+                //initialise item layout
+                MDPatternLayoutItem *item = [[MDPatternLayoutItem alloc] initWithTileType:@"triangleUpRight" frame:frame];
+                
+                //add item layout to array
+                [layoutItems addObject:item];
+            }
         }
     }
     

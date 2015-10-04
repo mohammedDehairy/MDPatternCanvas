@@ -60,6 +60,7 @@
         scrollContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     }
     
+    //set tile size to be 10% of the container whole size
     _patternLayout.tileSize = CGSizeMake(scrollContainerView.bounds.size.width/10, scrollContainerView.bounds.size.height/10);
     
     
